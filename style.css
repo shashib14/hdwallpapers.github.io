@@ -50,6 +50,10 @@
     cursor: pointer;
     z-index: 1;
 }
+#image {
+    height: 30px;
+    width: 40px;
+}
 
 #dropdown {
     text-align: center;
@@ -862,5 +866,9 @@ hr {
     .col1 .show-on-scroll {
         text-shadow: 2px 3px 3px rgb(0, 0, 0);
         margin-left: 30px;
-    } 
+    }
+    #image {
+    height: 20px;
+    width: 25px;
+}
 }
