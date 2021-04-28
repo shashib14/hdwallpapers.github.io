@@ -855,5 +855,12 @@ hr {
     }
     .nav {
         padding: 10px 0;
-    }   
+    }
+    .col0 .show-on-scroll {
+        text-shadow: 5px 10px 5px rgb(0, 0, 0);
+    }
+    .col1 .show-on-scroll {
+        text-shadow: 2px 3px 3px rgb(0, 0, 0);
+        margin-left: 30px;
+    } 
 }
