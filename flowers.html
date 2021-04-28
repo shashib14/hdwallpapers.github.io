@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>  
+    <div class="backbtn"><a href="#home" id="back">&#8592; BACK</a></div> 
+     <div class="header">
+         <h1>FLOWER WALLPAPER PHOTOS</h1>
+     </div>
+        <div id="row">
+            <img src="flowers/flower0-cornflower.jpg">
+            <img src="flowers/flower1-blueflower.jpg">
+            <img src="flowers/flower2-butterfly.jpg" >
+            <img src="flowers/flower3-drip.jpg"" >
+            <img src="flowers/flower4.jpg" >
+            <img src="flowers/flower5.jpg" >
+            <img src="flowers/flower6.jpg" >
+            <img src="flowers/flower7-garden.jpg" >
+            <img src="flowers/flower8-lily.jpg" >
+            <img src="flowers/flower9-lotus.jpg">
+            <img src="flowers/flower10-lotus.jpg" >
+            <img src="flowers/flower11-poppy.jpg" >
+            <img src="flowers/flower12-rose.jpg" >
+            <img src="flowers/flower13-rose.jpg" >
+            <img src="flowers/flower14-tulip-purple.jpg" >
+            <img src="flowers/flower15-tulips.jpg" >
+            <img src="flowers/flower16-yellow.jpg" >  
+        </div>
+        <<div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="download"><button onclick='downloadimg()'>download for free</button></div>
+        </div>
+
+
+        <script>
+            document.getElementById('back').onclick= function() {
+                window.history.back();
+            }
+            window.onload = function() {
+                var elem = document.querySelectorAll('img'); 
+               for(i=0 ; i<elem.length; i++) {
+                   elem[i].setAttribute('onClick', 'myfunc(this)');
+                }
+             }
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");         
+             function myfunc(heyy) {
+               modal.style.display = "block";
+               modalImg.src = heyy.src;
+             }
+             var span = document.getElementsByClassName("close")[0];
+             span.onclick = function() { 
+             modal.style.display = "none";
+             }
+         // save file button
+         function downloadimg() {
+             alert("sorry ,wallpapers are not available for download.\nPage will updated soon." );
+             }
+
+        </script>
+</body>
+</html>
