@@ -72,6 +72,7 @@
     overflow: hidden;
     transform: scaleY(0);
     transform-origin: top;
+    display: block;
 }
 .dropdown hr {
     width: 80%;
@@ -96,6 +97,8 @@
 .dropdown li a {
     text-decoration: none;
     color: white;
+    background: none;
+    cursor: pointer;
 }
 .dropbtn img{
     margin-bottom: 10px;
@@ -105,7 +108,8 @@
     position: relative;
     margin-right: 25px;
     display: block;
-    cursor: pointer;   
+    cursor: pointer;
+    background: none;
 }
 /* background video*/
 .vid {
